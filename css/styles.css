@@ -1,0 +1,167 @@
+  /* 1. RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+    --primary: #6c5ce7;    /* Roxo moderno */
+    --accent: #00b894;     /* Verde para sucesso */
+    --warning: #fab1a0;    /* Coral para erros */
+    --dark: #2d3436;
+    --light: #f9f9f9;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* 2. CABEÇALHO */
+header {
+    background: white;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* 3. BANNER PRINCIPAL (HERO) */
+.hero {
+    background: linear-gradient(135deg, var(--primary), #a29bfe);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* 4. FORMULÁRIO (ÁREA DE CONVERSÃO) */
+.cadastro {
+    max-width: 450px;
+    margin: -40px auto 50px; /* Sobe um pouco para sobrepor o banner */
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.cadastro h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--primary);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: filter 0.3s, transform 0.2s;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* 5. MODAL (ESTRUTURA) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    place-items: center;
+    z-index: 100;
+}
+
+.modal-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* 6. RODAPÉ */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #dfe6e9;
+    font-size: 0.8rem;
+}
+
+.redes-sociais {
+    margin-top: 15px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    .hero h1 { font-size: 1.8rem; }
+    .cadastro { margin-top: 20px; width: 90%; }
+}
