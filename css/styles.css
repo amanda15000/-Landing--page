@@ -31,7 +31,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 150px;
 }
 
 nav ul {
@@ -55,7 +55,7 @@ nav a:hover {
 .hero {
     background: linear-gradient(135deg, var(--primary), #a29bfe);
     color: white;
-    padding: 60px 20px;
+    padding: 80px 60px;
     text-align: center;
 }
 
@@ -150,10 +150,57 @@ button:hover {
 
 /* 6. RODAPÉ */
 footer {
-    text-align: center;
+  footer {
+    background-color: #333;
+    color: rgb(0, 0, 0);
     padding: 40px 20px;
-    background: #dfe6e9;
-    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.regras-texto {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #000000;
+    text-align: justify;
+}
+
+.regras-texto h4 {
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.certificado {
+    font-size: 0.75rem;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.redes-sociais p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.redes-sociais a {
+    color: rgb(92, 12, 92);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #ffd700; /* Cor de destaque (ouro) ao passar o mouse */
+}
 }
 
 .redes-sociais {
